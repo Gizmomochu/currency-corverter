@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuttency-converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Przelicznik Walut</h1>
+    </header>
+    <fieldset class="fieldset">
+    <legend class="fieldset__legend">Prosty Kalkulator</legend>
+    <div class="fieldset__div">
+        <span>Kwota w PLN*</span>
+        <input class="js-amount" placeholder="Wpisz wartość w PLN" type="number" required min="0" step="any">
+    </div>
+    <div class="fieldset__div">
+        <span>Waluta*</span>
+        <select class="js-currency fieldset__divSelect">
+            <option class="Euro" value="EUR">Euro</option>
+            <option class="Dolar" value="USD">USD</option>
+            <option class="Bitcoin" value="BTC">BTC</option>
+        </select>
+    </div>
+    <div class="fieldset__div">
+        <button class="js-buttonCount fieldset__divButton">Przelicz</button>
+    </div>
+    <div>* pole wymagane</div>
+</fieldset>
+    <footer class="js-result footer">WYNIK</footer>
+</body>
+
+</html>
